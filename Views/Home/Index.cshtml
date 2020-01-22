@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+    <link rel="stylesheet" href="~/css/Login.css" />
+@*Login*@
+
+
+
+<div class="container login-container">
+    <div class="row">
+        <div class="col-md-5 ads">
+            <h1><span id="fl">Sistema</span><span id="sl"></span></h1>
+        </div>
+        <div class="col-md-7 login-form">
+            
+            <h3>Iniciar sesión</h3>
+            <form action="/" method="post">
+                <div class="form-group">
+                    <label>Usuario</label>
+                    <input type="text" class="form-control" placeholder="Usuario">
+                </div>
+                <div class="form-group">
+                    <label>Contraseña</label>
+                    <input type="password" class="form-control" placeholder="Contraseña">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-black btn-lg btn-block" asp-area="" asp-controller="Admin" asp-action="Index">Iniciar sesión</button>
+                </div>
+                @*<div class="form-group forget-password">
+                    <a href="#">Forget Password</a>
+                </div>*@
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewData["Title"] = "Registrar usuario";
+    @section CustomSection{ }
+}
+    <link href="~/css/Userregister.css" rel="stylesheet" />
+    <div class="wrapper fadeInDown">
+        <div id="formContent" style="background-color:#B3B3D9;">
+            
+            
+
+            <!-- Login Form -->
+            <form >
+                <div class="m-5" >
+                    <h4 class="fadeIn first ">Informacion Personal</h4>
+                    <div class="fadeIn first">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <!---User Information-->
+                    <div class="row">
+                        <!--Nombre-->
+                        <div class="col-md-6 mb-3">
+                            <div class="input-group">
+                                <input type="text" id="name" class="fadeIn second" name="login" placeholder="Nombre" required="">
+                                <div class="invalid-feedback" style="width: 100%;">
+                                    Completa el campo nombre.
+                                </div>
+                            </div>
+                        </div>
+                        <!--Apellido-->
+                        <div class="col-md-6 mb-3">
+                            <div class="input-group">
+                                <input type="text" id="lastname" class="fadeIn third" name="login" placeholder="Apellido" required="">
+                            </div>
+                            <div class="invalid-feedback" style="width: 100%;">
+                                Completa el campo apellido.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <!--correo-->
+                        <div class="input-group">
+                            <input type="email" class="fadeIn fourth" name="login" id="email" placeholder="Correo Electronico" required="">
+                            <div class="invalid-feedback" style="width: 100%;">
+                                Completa el campo correo y valido.
+                            </div>
+                        </div>
+                    </div>
+                    <!--User Credentials-->
+                    <h4 class="fadeIn five">Credenciales del usuario </h4>
+                    <div class="needs-validation" novalidate="">
+
+
+                        <div class="">
+                            <div class="input-group">
+                                <input type="text" class="fadeIn six" id="username" placeholder="Usuario" required="">
+                                <div class="invalid-feedback" style="width: 100%; ">
+                                    Completa el campo usuario.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="">
+                            <div class="input-group">
+                                <input type="password" class="fadeIn seven" id="email" placeholder="Contraseña" required="">
+                                <div class="invalid-feedback" style="width: 100%;">
+                                    Introduzca una contraseña.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- btn submit -->
+                <div id="formFooter">
+                    <input type="submit" class="fadeIn eight" value="Registrar">
+                </div>
+            </form>
+        </div>
+    </div>
